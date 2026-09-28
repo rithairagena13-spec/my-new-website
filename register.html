@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>Booking · Amahoro Eco-Guide</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="layout-grid">
+      <aside class="left-sidebar">
+        <p class="brand-title">Amahoro Eco-Guide<span>Sustainable Travel</span></p>
+        <p class="menu-label">Navigation</p>
+        <nav class="nav-links" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="parks.html">National Parks</a></li>
+            <li><a href="register.html" aria-current="page">Book an Eco-Tour</a></li>
+          </ul>
+        </nav>
+        <p class="side-note">Every visit to our protected national parks directly funds local community development.</p>
+      </aside>
+      <header class="top-header">
+        <div>
+          <h1>Secure Tour Permit</h1>
+          <p class="breadcrumbs"><a href="index.html">Home</a> · Booking</p>
+        </div>
+        <div class="top-header-buttons">
+          <a class="btn" href="dashboard.html">Dashboard view</a>
+        </div>
+      </header>
+      <main class="main-content white-box" id="main">
+        <h2>Permit Request Form</h2>
+        <p class="subtitle">Complete your group details to allocate revenue shares directly to regional border cooperatives.</p>
+        <form action="/submit" method="POST" class="form-box">
+          <div class="form-row">
+            <div class="form-input-group">
+              <label for="full-name">Full name</label>
+              <input type="text" id="full-name" placeholder="Enter your name" required />
+            </div>
+            <div class="form-input-group">
+              <label for="email">Email address</label>
+              <input type="email" id="email" placeholder="name@domain.com" required />
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-input-group">
+              <label for="phone">Phone connection</label>
+              <input type="tel" id="phone" placeholder="+250..." required />
+              <span class="hint-text">Include routing country numbers.</span>
+            </div>
+            <div class="form-input-group">
+              <label for="subject">Destination Forest</label>
+              <select id="subject" required>
+                <option value="">Choose your targeted park</option>
+                <option value="volcanoes">Volcanoes Gorilla Track</option>
+                <option value="akagera">Akagera Safari Track</option>
+                <option value="nyungwe">Nyungwe Canopy Walk</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-input-group">
+            <fieldset>
+              <legend>Preferred alert network</legend>
+              <div class="radio-group">
+                <label for="c-email"><input type="radio" id="c-email" name="m" checked /> Email inbox</label>
+                <label for="c-phone"><input type="radio" id="c-phone" name="m" /> Cellular call</label>
+              </div>
+            </fieldset>
+          </div>
+          <div class="form-input-group">
+            <label for="message">Disclosures or Travel Schedule</label>
+            <textarea id="message" cols="50" rows="8" placeholder="Enter your targeted travel weeks..." required></textarea>
+          </div>
+
+          
+          <div class="form-buttons">
+            <button type="submit">Submit form</button>
+            <button type="reset">Reset entries</button>
+          </div>
+        </form>
+      </main>
+      <section class="history-box">
+        <h2>Form Logs</h2>
+        <ol>
+          <li><strong>Processing</strong><span>Standard pass setup takes roughly 2 hours.</span></li>
+        </ol>
+      </section>
+      <section class="team-box">
+        <h2>Booking Support</h2>
+        <ul class="avatar-list">
+          <li>
+            <span class="circle-icon" aria-hidden="true">RM</span>
+            <span><b>Rwanda Office</b><span>Permit Allocations Desk</span></span>
+          </li>
+        </ul>
+      </section>
+      <section class="user-box">
+        <h2>Desk Indicators</h2>
+        <table class="simple-table">
+          <thead>
+            <tr>
+              <th>Office Hub</th>
+              <th>Support Level</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kigali Central HQ</td>
+              <td>Active response channels</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <footer class="page-footer">
+        <p>© 2026 Amahoro Eco-Guide · Sustainable travel loops.</p>
+      </footer>
+    </div>
+  </body>
+</html>
