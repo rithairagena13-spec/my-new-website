@@ -1,49 +1,102 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
-</head>
-<body>
- <header>
-        <h1>My Tech Blogs</h1>
-        <nav>
-            <a href="form.html">Form</a>
-         
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>Home · Amahoro Eco-Guide</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="layout-grid">
+      <aside class="left-sidebar">
+        <p class="brand-title">Amahoro Eco-Guide<span>Sustainable Travel</span></p>
+        <p class="menu-label">Navigation</p>
+        <nav class="nav-links" aria-label="Main navigation">
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="dashboard.html">Dashboard</a></li>
+            <li><a href="parks.html">National Parks</a></li>
+            <li><a href="register.html">Book an Eco-Tour</a></li>
+          </ul>
         </nav>
-    </header>
-    <main>
-        <article>
-            <h2>Understanding HTML</h2>
-            <p>Semantic elements are critical for a modern web page's structure and accessibility.</p>
-        </article>
-        
-        <label for="first name">First Name</label>
-<input type="text" name="first name" placeholder="First Name" required>
-<br>
-<br>
-<label>Country</label>
-<select>
-    <option value="">Select a country</option>
-    <option value="RW">Rwanda</option>
-    <option value="UG">Uganda</option>
-    <option value="TZ">Tanzania</option>
-    <option value="KE">Kenya</option>
-    <option value="ET">Ethiopia</option>
-</select>
-<br>
-<br>
-<label for="message">Message:</label>
-<textarea name="message" rows="4" cols="50" placeholder="Write your message..."></textarea>
-<br>
-<br>
-<button type="submit">Send Message</button>
-    </main> 
-    <footer>
-        <p>&copy;  2026 this isMy Tech Blogs</p>
-
-    </footer>
-
-</body>
+        <p class="side-note">Every visit to our protected national parks directly funds local community development.</p>
+      </aside>
+      <header class="top-header">
+        <div>
+          <h1>Eco-Tourism Overview</h1>
+          <p class="breadcrumbs">Home · Explorer Dashboard</p>
+        </div>
+        <div class="top-header-buttons">
+          <a class="btn" href="parks.html">Explore Parks</a>
+          <a class="btn btn-solid" href="register.html">Book Permit</a>
+        </div>
+      </header>
+      <main class="main-content white-box" id="main">
+        <h2>Welcome to the Land of a Thousand Hills</h2>
+        <p class="subtitle">Discover protected ecosystems and low-impact travel adventures.</p>
+        <div class="stats-grid">
+          <div class="stat-box"><b>4</b><span>National Parks</span></div>
+          <div class="stat-box"><b>1,000+</b><span>Mountain Gorillas</span></div>
+          <div class="stat-box"><b>10%</b><span>Revenue Shared</span></div>
+          <div class="stat-box"><b>0</b><span>Plastics Allowed</span></div>
+        </div>
+        <section>
+          <h2>Featured Eco-Destinations</h2>
+          <div class="cards-grid">
+            <article class="card-item">
+              <h3>Volcanoes National Park</h3>
+              <p>Home to the critically endangered mountain gorillas and dramatic volcanic mountain ranges.</p>
+              <a href="parks.html">Trekking guidelines →</a>
+            </article>
+            <article class="card-item">
+              <h3>Akagera National Park</h3>
+              <p>Central Africa largest protected wetland hosting a thriving Big Five safari ecosystem.</p>
+              <a href="parks.html">Savannah highlights →</a>
+            </article>
+          </div>
+        </section>
+      </main>
+      <section class="history-box">
+        <h2>Live Wildlife Logs</h2>
+        <ol>
+          <li><strong>Gorilla Birth</strong><span>Susa family welcomed a healthy newborn twin!</span></li>
+        </ol>
+      </section>
+      <section class="team-box">
+        <h2>Certified Eco-Guides</h2>
+        <ul class="avatar-list">
+          <li>
+            <span class="circle-icon" aria-hidden="true">JK</span>
+            <span><b>Jean-Claude K.</b><span>Primate Tracking Expert</span></span>
+          </li>
+        </ul>
+      </section>
+      <section class="user-box">
+        <h2>Your Explorer Profile</h2>
+        <table class="simple-table">
+          <thead>
+            <tr>
+              <th>Profile Item</th>
+              <th>Current Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Traveler</td>
+              <td>Eco-Explorer</td>
+            </tr>
+            <tr>
+              <td>Permit Status</td>
+              <td>1 Active pass</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <footer class="page-footer">
+        <p>© 2026 Amahoro Eco-Guide · Sustainable travel loops.</p>
+      </footer>
+    </div>
+  </body>
 </html>
