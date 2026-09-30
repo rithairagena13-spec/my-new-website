@@ -672,3 +672,14 @@ resize: vertical;
   background-color: white;
   color: #102c1d;
 }
+
+
+.wide-banner {
+  width: 95%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+  border-radius: 6px;
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
